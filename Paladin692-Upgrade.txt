@@ -1,0 +1,28 @@
+How to : Paladin-6 Firmware Update
+
+First the instructions on loading drivers etc for you PC/Laptop to talk to Paladin.
+
+When you first connect a Paladin Arduino Mega to a Windows PC via the USB it will automatically install / activate the correct driver. If it does not then :
+
+Install the arduino software - which gets you all the USB drivers from here : 
+https://startingelectronics.org/software/arduino/installing-arduino-software-windows-10/ - this takes you to a full explanation page.
+
+The quicker link is :  https://www.arduino.cc/en/Main/Donate  - Just hit DOWNLOAD - you don't have to pay.   Install that Arduino software.
+
+Now download the XLOADER Windows App from Github :
+
+https://github.com/Zkrapper/XLoader
+
+Extract this to a subdirectory that you can find again and add the PalCore-692.mega.hex from this repository.
+
+Plug in the Mega to your USB 'B' (square end USB lead)
+start XLOADER
+Select Mega(ATMEGA2560)
+Find the Serial Port on the dropdown
+The baud rate should be 115200 (default)
+Navigate to the HEX file to load (PalCore-692.mega.hex in this case)
+click UPLOAD
+Wait 2 seconds
+
+Paladin will restart and the screen will go active on the new load.  The USB will power the whole Paladin, but there will not be any meaningful grid numbers. The temperature will show ambient or you will see it go into the probe check and NT MODE if the probe is not present or incorrectly fitted.
+
