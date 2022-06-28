@@ -1,5 +1,5 @@
-# Paladin-692
-This will contain the latest firmware for Paladin-6 (currently V692)
+# Paladin-693
+This will contain the latest firmware for Paladin-6 (currently V693)
 Suitable for all Sept 2020 daughterboard units fitted with a top temperature control switch.
 
 Paladin 650 - 691 Changes
@@ -16,7 +16,7 @@ RS232 and LoRa ESP32 interfaces now fully operational.  Auto detect for both on 
 Temperature probe connector now a 3 pin keyed plug to a socket mounted on the motherboard.  Much easier to use.
 
 
-Paladin 692 Changes
+Paladin 692/3 Changes
 
 All RF433 operation now exclusively on the (added with RF433) Bottom Switch.  The top switch is exclusively Temp Control. DIP3-1 activates RF433.
 Improved 'Throttle' graphic sensitivity to remove throttle display at low SSR work cycles.
@@ -29,3 +29,4 @@ https://www.health.govt.nz/system/files/documents/publications/prevention-of-leg
 To achieve this without the considerable complexity of a timer using 62C as the Legionella and boost value to reset the Legionella clock flag.  (now set to 168 hours v 72 hours)
 Overnight boosts (now to 62C - to mirror the Legionella requirement) and the Legionella boosts are now triggered at the overnight reset point.   This ensures that any top-up usage is shown the following morning.
 The overnight reset point calculations have been reworked to be more reliably in the 10pm-4am range throughout the seasons.  Poor solar production will still attempt to thwart this, but hopefully less often.
+The sensitivity of the 'Throttle Bar' has been reduced to dampen response at lower levels of diversion.  The throttle bar will only appear at approximately 900W+ of diversion activity.  The nett result is a smoother, less distracting display element.
